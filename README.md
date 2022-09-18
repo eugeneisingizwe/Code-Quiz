@@ -35,6 +35,7 @@ THEN I can save my initials and my score
 ```
 ## Link To Deployed Webpage
 
+https://eugeneisingizwe.github.io/Code-Quiz/
 
 ## Mock-Up
 
