@@ -1,0 +1,33 @@
+** {
+    box-sizing: border-box;
+  }
+
+  body{
+    background-color: aqua;
+  }
+
+  header {
+    padding: 40px;
+    background: gray;
+
+  }
+
+  header a {
+    text-align: left;
+    position: fixed;
+    font-size: 20px;
+  }
+
+  header h1{
+    text-align: right ;
+    font-size: 25px;
+  }
+
+  section{
+    text-align: center;
+  }
+
+.input {
+  align-items: center;
+}
+  

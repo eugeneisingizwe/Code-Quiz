@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="./Assets/CSS/style.css" />
+</head>
+<body>
+<header>
+     <!-- View scores and timer to display on the top of the page-->   
+     <div class="view-scores">
+        <a id="view-scores"  href=":/highscores">View Scores</a>
+        <h1>Timer: <span id="timer">0</h1>
+        </div>
+    </header>
+    <main>
+        <section>
+            <!-- button to begin the game-->
+            <h2>Coding Quesitons Quiz built by JavaScript</h2>
+            <div class="larg-font instructions">Please click the start button to start the quiz.The quiz is timed and each time answer is incoorect, 10 second will be subracted from the time. When all the queiston are answered or the timer reaches 0 then the game is over. Have fun!</div>
+            <button id="start-button" class="box">start</button> 
+        </div>
+
+        <div id="questions"> 
+
+        <div id="answers"></div>
+        </div>
+        <div id="final-score">
+            <h1>TIME'S UP!</h1>
+            <p>Your Score is: <span id="final-score">0</span></p>
+            <p>Please enter your intials:<input type="text" id="intials" maxlength="10"><br>
+            <br>
+            <input type="submit" id="submit" value="submit"></p>
+        </div>
+
+        </section>
+    </main>
+    
+<script src="Assets/script.js"></script>
+</body>
+</html>
