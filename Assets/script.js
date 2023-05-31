@@ -124,7 +124,7 @@ function nextQuestion () {
 
 //after each question is answered check to see if the answer is correct or wrong 
 
-function checkAnswers(answer) {
+function checkAnswers(correctAnswer) {
     var lineBreak = document.getElementById("lineBreak");
     lineBreak.style.display = "block";
     answerCheck.style.display = "block";
@@ -133,12 +133,12 @@ function checkAnswers(answer) {
         //correct answer, add 1 score to final score 
         correctAns++;
         console.log(correctAns);
-        answerCheck.textContent = "Correct";
+        answerCheck.textContent = "Correct!";
     } else {
         //wrong answer, duduct 10 second from the timer 
         totalTime -= 10;
         timerLeft.textContent = totalTime;
-        answerCheck.textContent = "Wrong! the correct answer is: " + questions[questionArrayIndex].answer;
+        answerCheck.textContent = "Wrong! the correct answer is: " + questions[questionArrayIndex].correctAnswer;
 
     }
 
@@ -146,8 +146,12 @@ function checkAnswers(answer) {
     // now repeat with the rest of the questions
 
     if (questionArrayIndex < questions.length){
+        nextQuestion();
+    } else {
+
         gameOver();
     }
+    
 }
 
 function chooseA(){checkAnswers(0);}
