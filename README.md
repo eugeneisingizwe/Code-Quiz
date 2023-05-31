@@ -41,7 +41,7 @@ https://eugeneisingizwe.github.io/Code-Quiz/
 
 The following animation demonstrates the application functionality:
 
-![A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over.](./Assets/image/webpage.png)
+![A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over.](./Assets/image/eugeneisingizwe.github.io_Code-Quiz_%20(1).png)
 
 
 
