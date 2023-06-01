@@ -231,7 +231,7 @@ function showHighScores(){
     summary.style.display = "none";
     highScoreSection.style.display = "block";
 
-    var savedHighScores = localStorage.getItem("high scores");
+    var savedHighScores = localStorage.getItem("high score");
 
     //check if there is any local storege
 
@@ -243,7 +243,7 @@ function showHighScores(){
 
     var storeHighScores = JSON.parse(savedHighScores);
 
-    for (; i < storedHighScores.length; i++){
+    for (; i < storeHighScores.length; i++){
         var eachNewHighScore = document.createElement("p");
         eachNewHighScore.innerHTML = storeHighScores[i].intials + ": " + storeHighScores[i].score;
         listOfHighScore.appendChild(eachNewHighScore);
